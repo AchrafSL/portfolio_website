@@ -1,4 +1,3 @@
-import tailwindcss from "@tailwindcss/vite";
 // @ts-check
 
 import mdx from '@astrojs/mdx';
@@ -13,6 +12,6 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
 
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [/** @type {any} */ (tailwindcss())],
   },
 });

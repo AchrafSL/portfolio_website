@@ -7,6 +7,8 @@ import PostCard from "../../../components/ui/card/PostCard.astro";
 import { author } from "../../../data/author";
 import { slugifyTag as slugify } from "../../../lib/slug";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
     const posts = await getCollection("blog");
     const authors = [
