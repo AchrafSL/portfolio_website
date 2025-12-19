@@ -10,11 +10,28 @@ import { slugifyTag as slugify } from "../../../lib/slug";
 export const prerender = true;
 
 export async function getStaticPaths() {
-    const posts = await getCollection("blog");
-    const authors = [
-        ...new Set(posts.map((p) => slugify(p.data.author || author.name))),
-    ];
-    return authors.map((authorSlug) => ({ params: { slug: authorSlug } }));
+    try {
+        const posts = await getCollection("blog");
+        const authors = new Set();
+
+        // Always include the default author to ensure at least one route exists
+        authors.add(slugify(author.name));
+
+        // Include authors from posts if they exist
+        posts.forEach((p) => {
+            if (p.data.author) {
+                authors.add(slugify(String(p.data.author)));
+            }
+        });
+
+        return Array.from(authors).map((authorSlug) => ({
+            params: { slug: authorSlug },
+        }));
+    } catch (e) {
+        console.error("Error in getStaticPaths for author:", e);
+        // Fallback to the main author to prevent build failure on Cloudflare
+        return [{ params: { slug: slugify(author.name) } }];
+    }
 }
 
 const { slug } = Astro.params;
