@@ -2,6 +2,7 @@
 import { author } from "../../../data/author";
 import FormattedDate from "../../FormattedDate.astro";
 import { slugifyTag as slugify } from "../../../lib/slug";
+import { Image } from "astro:assets";
 
 interface Props {
   pubDate: Date;
@@ -16,11 +17,11 @@ const { pubDate, readingTimeMin = 0, authorName } = Astro.props as Props;
     <div
       class="w-12 h-12 rounded-full overflow-hidden border border-[color:var(--color-border-light)]"
     >
-      <img
-        src={author.avatar.src}
+      <Image
+        src={author.avatar}
         alt={author.name}
-        width="48"
-        height="48"
+        width={48}
+        height={48}
         class="w-full h-full object-cover"
       />
     </div>
