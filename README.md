@@ -1,7 +1,5 @@
 # Achraf Salimi – Personal Portfolio
 
-**Big Data, AI & Advanced Applications Engineer**
-
 Welcome to the source code of my personal portfolio website. This project showcases my professional journey, skills, and projects in the fields of Big Data, Artificial Intelligence, and Data Engineering.
 
 ## 🚀 About The Project
