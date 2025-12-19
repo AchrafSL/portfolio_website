@@ -1,0 +1,124 @@
+---
+import Layout from "../layouts/BlogPost.astro";
+import GlowLineSeparator from "@/components/ui/separator/GlowLineSeparator.astro";
+const pageTitle = "About Me";
+const pageDescription = "Learn more about my background.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  pubDate={new Date()}
+  showHeader={false}
+  readingTimeMin={0}
+>
+  <div class="prose-content space-y-8">
+    <!-- Intro Section -->
+    <div>
+      <p class="text-lg leading-relaxed">
+        Hello! I'm <strong>Achraf Salimi</strong>. I am currently pursuing a <strong
+          >Master’s degree in Big Data, Artificial Intelligence, and Advanced
+          Applications</strong
+        > at Ibn Tofail University. With a solid foundation from my Bachelor’s in
+        Mathematics and Computer Science, I bridge the gap between theoretical algorithms
+        and practical, scalable software solutions.
+      </p>
+    </div>
+
+    <GlowLineSeparator />
+
+    <!-- The Journey Section -->
+    <div>
+      <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span class="text-[color:var(--accent)]">🚀</span> The Journey
+      </h3>
+      <p>
+        My path wasn't always linear. Despite having a university background in
+        basic Java, I felt the need to deepen my understanding of computer
+        science fundamentals. This led me to Harvard's <strong>CS50x</strong>.
+        It was a rigorous introduction where I explored C (diving into memory
+        management and data structures), Python, SQL, and Flask.
+      </p>
+      <p class="mt-4">
+        For my final project, I challenged myself to build a full-featured <strong
+          >Android To-Do app</strong
+        > with AI assistance, a project that required me to learn Android development
+        from scratch in just a few weeks. Earning that certificate was a pivotal moment
+        that proved to me I could build anything I set my mind to.
+      </p>
+    </div>
+
+    <!-- Data Science Section -->
+    <div>
+      <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span class="text-[color:var(--accent)]">📊</span> Diving Deep into Data
+      </h3>
+      <p>
+        Realizing the transformative potential of data, I pivoted my focus
+        towards Data Science. I sharpened my Python skills through the
+        University of Michigan's <em>Python for Everybody</em> specialization and
+        then embarked on an intensive journey with <strong>DataCamp</strong>.
+      </p>
+      <p class="mt-4">
+        I have since completed both the <strong>Data Scientist</strong> and <strong
+          >Data Analyst</strong
+        > career tracks, and I have recently started the <strong
+          >Data Engineer</strong
+        > path. This comprehensive training has equipped me with a robust set of tools
+        for data cleaning, visualization, predictive modeling, and now, data pipeline
+        architecture.
+      </p>
+    </div>
+
+    <!-- Tech Stack Section -->
+    <div>
+      <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span class="text-[color:var(--accent)]">🛠️</span> My Tech Stack
+      </h3>
+      <p class="mb-4">
+        Today, I work comfortably across the data and development spectrum:
+      </p>
+      <ul class="list-disc list-outside ml-5 space-y-2">
+        <li>
+          <strong>Data Science & Analysis:</strong> I use <strong>Python</strong
+          > (Pandas, NumPy) for manipulation and <strong>Scikit-learn</strong> for
+          machine learning tasks like regression and clustering. I visualize insights
+          using Matplotlib and Seaborn.
+        </li>
+        <li>
+          <strong>Development:</strong> My roots in <strong>Java</strong> serve me
+          well, and I am actively expanding into backend development with <strong
+            >Spring Boot</strong
+          > to build robust applications.
+        </li>
+        <li>
+          <strong>Data Engineering:</strong> I understand the flow of data, from <strong
+            >SQL</strong
+          > databases to processing pipelines.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Looking Ahead Section -->
+    <div>
+      <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span class="text-[color:var(--accent)]">🔮</span> What's Next?
+      </h3>
+      <p>
+        I am a firm believer in continuous growth. Currently, I am diving deeper
+        into <strong>Data Engineering</strong> to truly master <strong
+          >Big Data</strong
+        >, a field that has fascinated me since my teenage years. In parallel,
+        driven by my genuine passion for technology, I am strengthening my core
+        development skills to become a versatile, end-to-end engineer.
+      </p>
+      <p class="mt-4 italic text-[color:var(--color-text-muted)]">
+        When I'm not coding, I'm focusing on maintaining a healthy balance, a
+        lesson learned the hard way!, to ensure I can keep building and learning
+        for the long haul.
+      </p>
+    </div>
+  </div>
+
+  <GlowLineSeparator />
+</Layout>

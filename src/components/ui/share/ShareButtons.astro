@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string;
+  url: string;
+}
+const { title, url } = Astro.props as Props;
+const liUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+const xUrl = `https://x.com/SuperNovaACh`;
+
+import xIcon from "../../../assets/icons/x-blog-post-share-icon.svg?raw";
+import liIcon from "../../../assets/icons/linkedin-blog-post-shareicon.svg?raw";
+---
+
+<div class="sw-share group flex items-center gap-2">
+  <a
+    href={xUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="sw-share-btn"
+    aria-label="Visit on X"
+    set:html={xIcon}
+  />
+  <a
+    href={liUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="sw-share-btn"
+    aria-label="Share on LinkedIn"
+    set:html={liIcon}
+  />
+</div>
