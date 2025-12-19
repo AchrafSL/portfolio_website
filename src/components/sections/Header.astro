@@ -2,6 +2,8 @@
 import { SITE_TITLE } from "../../consts";
 import HeaderLink from "./HeaderLink.astro";
 import ThemeToggle from "../ui/button/ThemeToggle.astro";
+import { Image } from "astro:assets";
+import logo from "../../../public/favicon.svg";
 ---
 
 <header class="bg-background text-foreground border-b sw-header">
@@ -12,12 +14,12 @@ import ThemeToggle from "../ui/button/ThemeToggle.astro";
                 href="/"
                 aria-label="Home"
             >
-                <img
-                    src="/favicon.png?v=1"
-                    alt=""
-                    aria-hidden="true"
-                    width="45"
-                    height="45"
+                <Image
+                    src={logo}
+                    alt="Achraf Salimi Logo"
+                    width={45}
+                    height={45}
+                    loading="eager"
                 />
             </a>
             <div class="internal-links hidden md:flex items-center gap-2 ml-1">
@@ -108,6 +110,7 @@ import ThemeToggle from "../ui/button/ThemeToggle.astro";
                     target="_blank"
                     class="group inline-flex items-center text-[color:var(--color-text-secondary)]"
                 >
+                    <span class="sr-only">Go to GitHub</span>
                     <svg
                         viewBox="0 0 16 16"
                         aria-hidden="true"
