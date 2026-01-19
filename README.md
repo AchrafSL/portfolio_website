@@ -95,7 +95,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 **Achraf Salimi**
 
--   **GitHub**: [AchrafSL](https://github.com/AchrafSL)
+-   **linkedin**: [AchrafSL](https://www.linkedin.com/in/achraf-salimi-01sl/)
 
 ## 👏 Credits
 
