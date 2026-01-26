@@ -1,7 +1,7 @@
 ---
 title: "Chapter 9_Errors & Modules"
 description: "Handling errors with try/except/finally, creating custom exceptions, and structuring code with Modules and Packages."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 21 2026"
 ---
 
 # I. Errors

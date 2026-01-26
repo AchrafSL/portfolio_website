@@ -1,7 +1,7 @@
 ---
 title: "Chapter 5_Control Flow & Iteration"
 description: "Mastering control flow with conditional statements, loops (while, for), iterators, and generators."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 17 2026"
 ---
 
 # I. **Conditional Statements**

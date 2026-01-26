@@ -1,7 +1,7 @@
 ---
 title: "Chapter 10_OOP"
 description: "Object-Oriented Programming principles: Classes, Objects, Inheritance, Polymorphism, Encapsulation, and Magic Methods."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 22 2026"
 ---
 
 > object is the ultimate ancestor of every class in Python.

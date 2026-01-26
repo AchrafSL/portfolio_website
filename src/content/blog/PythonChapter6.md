@@ -1,7 +1,7 @@
 ---
 title: "Chapter 6_Functions, Decorators & Context Managers"
 description: "Defining functions, handling arguments (*args, **kwargs), scope (LEGB), decorators, and context managers."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 18 2026"
 ---
 
 > Functions, decorators, and context managers are grouped as “reusable/composable code” patterns.

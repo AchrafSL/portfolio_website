@@ -1,7 +1,7 @@
 ---
 title: "Chapter 8_Network Programming"
 description: "Introduction to network programming with Sockets, HTTP requests, urllib, Requests library, and BeautifulSoup."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 20 2026"
 ---
 
 # 1. Socket (Low-Level)

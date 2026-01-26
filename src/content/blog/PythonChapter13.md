@@ -1,7 +1,7 @@
 ---
 title: "Chapter 13_VirtualEnv"
 description: "Creating and managing isolated Python environments using venv for dependency management."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 25 2026"
 ---
 
 # 1. Virtual Environment (venv)

@@ -1,7 +1,7 @@
 ---
 title: "Chapter 12_Multithreading"
 description: "Understanding concurrency in Python, the Global Interpreter Lock (GIL), and using the threading module."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 24 2026"
 ---
 
 # Introduction to multithreading in python

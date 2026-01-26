@@ -1,7 +1,7 @@
 ---
 title: "Chapter 3_Collections"
 description: "Deep dive into Python collections: Lists, Tuples, Sets, and Dictionaries."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 15 2026"
 ---
 
 # I. Python Collections

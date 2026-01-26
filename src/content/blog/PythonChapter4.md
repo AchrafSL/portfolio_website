@@ -1,7 +1,7 @@
 ---
 title: "Chapter 4_Built-in Functions"
 description: "A comprehensive reference of Python's built-in functions for I/O, type conversion, math, iteration, and more."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 16 2026"
 ---
 
 # 1. Input / Output

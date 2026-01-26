@@ -1,7 +1,7 @@
 ---
 title: "Chapter 7_Standard Libraries"
 description: "Exploring essential Python standard libraries: Math, Random, Datetime (Timezones), and Regular Expressions (Re)."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 19 2026"
 ---
 
 # I. Math & Random

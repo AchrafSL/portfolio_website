@@ -1,7 +1,7 @@
 ---
 title: "Chapter 11_File Handling"
 description: "Reading and writing files, file modes, context managers, and object serialization with Pickle."
-pubDate: "Jan 26 2026"
+pubDate: "Jan 23 2026"
 ---
 
 # I. File Handling
