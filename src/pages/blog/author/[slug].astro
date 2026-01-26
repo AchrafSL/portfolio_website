@@ -35,9 +35,9 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const posts = (await getCollection("blog")).filter(
-    (p) => slugify(p.data.author || author.name) === slug,
-);
+const posts = (await getCollection("blog"))
+    .filter((p) => slugify(p.data.author || author.name) === slug)
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const authorName = posts[0]?.data.author || author.name;
 ---
 
