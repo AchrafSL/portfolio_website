@@ -104,11 +104,6 @@ with open("demofile.txt") as f:
 ```
 
 
-
----
-
-
-
 ---
 ---
 <br><br><br><br>
