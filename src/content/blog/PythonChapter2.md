@@ -1,6 +1,6 @@
 ---
 title: "Chapter 2_Core Data Types"
-description: "Core Data Types"
+description: "Master Python's core data types including Strings and Booleans, and explore the full range of operators from arithmetic to advanced asterisk (*) unpacking."
 pubDate: "Jan 26 2026"
 ---
 

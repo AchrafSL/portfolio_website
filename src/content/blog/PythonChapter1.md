@@ -1,6 +1,6 @@
 ---
 title: "Chapter 1_Core Language Semantics"
-description: "Core Language Semantics"
+description: "A comprehensive guide to Python's core semantics, covering input/output operations, variable assignment, data types, scope rules (LEGB), and slicing."
 pubDate: "Jan 26 2026"
 ---
 
