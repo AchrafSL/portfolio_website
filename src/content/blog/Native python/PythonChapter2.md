@@ -257,27 +257,34 @@ x>>n : right shift
 ```
 
 
-## 8. Python Operator Precedence:
+## 8. Python Operator Precedence (Python 3.x / 3.14):
 ```python
-()
+() [] {} .  (attribute access)  (function calls)
+await
 **
-+ - ~ : unary
-* / // %
-+ - : binary
++ - ~              # unary operators
+* @ / // %
++ -                # binary
 << >>
 &
 ^
 |
-comparisons, identity, membership
+< <= > >= != ==    # comparisons
+in, not in
+is, is not
 not
-and 
+and
 or
+if ... else        # conditional expression (ternary)
+:=                 # assignment expression (walrus)
+= += -= *= /= //= %= **= &= |= ^= >>= <<= @=
 
 
 # same order => L -> R evaluation
+
+# Matrix Multiplication (@)
+# Works only if the object has the __matmul__ magic method defined (e.g., NumPy, Pandas, or Custom Classes).
 ```
-
-
 
 
 ## 9. Special unary operator: (Asterisk *)
