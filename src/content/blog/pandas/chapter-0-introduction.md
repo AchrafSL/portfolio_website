@@ -1,7 +1,7 @@
 ---
 title: "Chapter 0_ Introduction to pandas"
 description: "An introduction to Pandas, NumPy, and Matplotlib, and working with DataFrames and Series."
-pubDate: "Feb 01 2026"
+pubDate: "Feb 25 2026"
 ---
 
 # I. Introduction

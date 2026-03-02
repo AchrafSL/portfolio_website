@@ -1,7 +1,7 @@
 ---
 title: "Chapter 2_ Feature engineering, Transformation & Accessors"
 description: "Learn about conditional transformations, binning, mapping, applying logic, vectorization, scaling, encoding, and using accessors."
-pubDate: "Feb 03 2026"
+pubDate: "Feb 27 2026"
 ---
 
 # I. Transformation

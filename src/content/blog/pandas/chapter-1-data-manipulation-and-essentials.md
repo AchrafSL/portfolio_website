@@ -1,7 +1,7 @@
 ---
 title: "Chapter 1_ Data manipulation & Essentials"
 description: "A guide on creating and exporting DataFrames, inspecting data, broadcasting, sorting, subsetting, and computing summary statistics."
-pubDate: "Feb 02 2026"
+pubDate: "Feb 26 2026"
 ---
 
 # 1. Creating Dataframes
