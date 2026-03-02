@@ -135,7 +135,7 @@ Output:
 
 # II. Note
 
-## 1. Difference between `np.logical_and`,`np.logical_or()`,`np.logical_and.reduce()`, `np.logical_or.reduce()` and `& / |` 
+## 1. Difference between `np.logical_and`,`np.logical_or()`,`np.logical_and.reduce()`, `np.logical_or.reduce()` and `'&' / '|'` 
 
 ```python
 import numpy as np
