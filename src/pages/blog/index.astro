@@ -8,7 +8,7 @@ import BlogAllArticles from "../../components/sections/BlogAllArticles.astro";
 import BlogPagination from "../../components/ui/nav/BlogPagination.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
 import FeaturedPost from "../../components/ui/card/FeaturedPost.astro";
-import { calculateReadingTimeFromHtml } from "../../lib/reading";
+import { calculateReadingTimeFromMarkdown } from "../../lib/reading";
 
 const PAGE_SIZE = 6;
 const posts = (await getCollection("blog")).sort(
@@ -19,9 +19,9 @@ const firstPagePosts = rest.slice(0, PAGE_SIZE);
 const totalPages = Math.max(1, Math.ceil(rest.length / PAGE_SIZE));
 let featuredReading = 0;
 if (featured) {
-  const { Content } = await render(featured);
-  const html = await Astro.slots.render("default");
-  featuredReading = calculateReadingTimeFromHtml(html ?? "");
+  featuredReading = calculateReadingTimeFromMarkdown(
+    (featured as any).body || featured.data.description || "",
+  );
 }
 ---
 
