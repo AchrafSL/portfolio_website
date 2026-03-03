@@ -718,10 +718,42 @@ df.pivot_table(
 ```
 
 
-# 6. Note:
+# 6. Other parts of Pandas
 
+## 6.1 Label Filtering (Boolean Indexing on Labels)
 > `df.index[condition]`: Returns row labels/names where the condition is True.
 >
 > `df.columns[condition]`: Returns column labels/names where the condition is True.
+
+
+## 6.2 Shifting (Lead and Lag)
+```python
+# Shift the indexes forward one, padding with NaT
+rides['End date'].shift(1).head(3)
+```
+
+
+### 6.2.1. How `.shift()` Works
+
+When you call `.shift(1)`, every value in your column moves down by one position. The first row becomes empty (filled with `NaN` or `NaT`) because there is no "previous" value to pull from.
+
+* **Lag (Past Data):** `shift(1)` — Moves data **down**. Use this to compare the current row with the **previous** one.
+* **Lead (Future Data):** `shift(-1)` — Moves data **up**. Use this to compare the current row with the **next** one.
+
+---
+
+#### A. Calculating "Idle Time" (Bike Data)
+
+To find out how long a bike sat at a station between two different users, you need the `End date` of the **previous** ride and the `Start date` of the **current** ride.
+
+```python
+# 1. Get the end time of the previous ride
+rides['previous_end'] = rides['End date'].shift(1)
+
+# 2. Calculate the "Idle Time"
+rides['idle_time'] = rides['Start date'] - rides['previous_end']
+
+```
+
 
 
