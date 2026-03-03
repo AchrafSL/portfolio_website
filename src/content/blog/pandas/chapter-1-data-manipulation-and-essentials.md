@@ -662,6 +662,9 @@ df.groupby(["col1", "col2"])["target_col"].agg(["mean", "sum", np.min, np.max])
 df.groupby('col1').size    # get the size of each group
 df.groupby('col1').first() # first row of each group
 
+df.groupby('col').mean() # # Calculates the mean of every column for each unique group in 'col'
+df.groupby('col').agg([np.mean, np.max]) # Calculates the mean and max of every column for each unique group in 'col'
+
 res = df.groupby("breed")["weight"].mean()
 # 'breed' is now the INDEX.
 # You cannot access it as a column (e.g., res['breed'] will fail).
