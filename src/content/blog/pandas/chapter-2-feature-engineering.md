@@ -489,3 +489,18 @@ plt.show()
 
 
 
+## 4. Feature Explosion: The Risk of Over-using `pd.get_dummies()`
+
+> When you apply One-Hot Encoding indiscriminately to every categorical column, you risk triggering the **Curse of Dimensionality**. This happens when the number of features (columns) grows too large relative to your number of rows.
+
+* **Model Memorization:** The model stops learning general patterns and starts "memorizing" the training data, leading to high accuracy on training but failure on new data (**Overfitting**).
+
+* **Computational Cost:** Training time and memory usage increase exponentially, often for diminishing returns in accuracy.
+* ..
+
+---
+
+
+> **Note: The Multicollinearity Problem**
+>
+> If you forget `drop_first=True`, you create redundant features where one column can be perfectly predicted by the others, which can destabilize linear models, a phenomenon known as the **Dummy Variable Trap**.

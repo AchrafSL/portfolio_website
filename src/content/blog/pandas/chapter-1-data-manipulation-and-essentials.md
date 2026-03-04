@@ -654,7 +654,7 @@ df["col"].unique()    # Returns an array of the unique names themselves
 import numpy as np
 
 df.groupby('col1')['target_col'].mean()
-df.groupby('col1')[[ 'target_col1','target_col2']].mean()
+df.groupby('col1')[[ 'target_col1','target_col2']].mean(numeric_only=True)
 
 df.groupby(["col1", "col2"])["target_col"].mean()
 df.groupby(["col1", "col2"])["target_col"].agg(["mean", "sum", np.min, np.max])
@@ -721,6 +721,7 @@ df.pivot_table(
 ```
 
 
+
 # 6. Other parts of Pandas
 
 ## 6.1 Label Filtering (Boolean Indexing on Labels)
@@ -757,6 +758,3 @@ rides['previous_end'] = rides['End date'].shift(1)
 rides['idle_time'] = rides['Start date'] - rides['previous_end']
 
 ```
-
-
-
