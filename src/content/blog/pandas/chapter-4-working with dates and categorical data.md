@@ -160,12 +160,6 @@ rides\
 
 # II. Working with categorical data
 
-
-
-Considerations for categorical data From EDA course -> pd.crosstab
-
-
-
 ## 1. What does it mean to be "categorical"?
 **Categorical**
 - Finite number of groups (or categories)
@@ -804,3 +798,49 @@ df_encoded = pd.get_dummies(df, columns=["color"], drop_first=True)
 
 * **NaN Values:** By default, `pd.get_dummies` ignores `NaN`. If a row is `NaN`, all resulting dummy columns for that feature will be `0`. If you want a specific column for missing data, use `dummy_na=True`.
 * **Curse of Dimensionality:** Using one-hot on a column with 1,000 unique values will add 1,000 new columns, which may lead to **overfitting**.
+
+
+## 10. Etc
+
+### 10.1 Cross-Tabulation `pd.crosstab()`
+
+> A Crosstab (or contingency table) is a powerful tool used to identify how observations occur in combination across multiple categorical variables. Instead of looking at a single column's frequency, a crosstab displays the intersection of categories, helping you uncover hidden relationships, dependencies, or data imbalances.
+
+---
+
+Using `pd.crosstab()`, you can analyze simple frequencies or even aggregate numeric values (like salaries) across categories.
+```python
+import pandas as pd
+
+# 1. Simple Frequency Count
+# Relationship between Company Size and Experience level
+print(pd.crosstab(salaries["Company_Size"], salaries["Experience"]))
+
+
+# 2. Crosstab with Aggregation
+# Calculate the average Salary_USD for each Job Category within each Company Size
+print(pd.crosstab(salaries["Job_Category"], salaries["Company_Size"],
+            values=salaries["Salary_USD"], aggfunc="mean"))
+
+
+"""
+Output 1:
+    Experience    EN  EX  MI   SE
+    Company_Size                 
+    L             24   7  49   44
+    M             25   9  58  136
+    S             18   1  21   15
+
+
+
+Output 2:
+    Company_Size               L           M          S
+    Job_Category                                       
+    Data Analytics    112851.749   95912.685  53741.877
+    Data Engineering  118939.035  121287.061  86927.136
+    Data Science       96489.520  116044.456  62241.749
+    Machine Learning  140779.492  100794.237  78812.586
+    Managerial        190551.449  150713.628  31484.700
+    Other              92873.911   89750.579  69871.248
+"""
+```
