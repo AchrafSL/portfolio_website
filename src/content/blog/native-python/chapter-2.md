@@ -15,6 +15,8 @@ consectetur adipiscing elit """ # Multiple line str
 
 print(a[1])  # # Strings are sequences (indexable & iterable)
 
+
+x = "Hello" "World" # => "HelloWorld"
 ```
 
 ---
